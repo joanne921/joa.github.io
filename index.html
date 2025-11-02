@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My GitHub Personal Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      text-align: center;
+      margin-top: 100px;
+    }
+    h1 {
+      color: #333;
+    }
+    #btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My GitHub Page!</h1>
+  <p>Click the button to see jQuery in action.</p>
+  <button id="btn" class="btn btn-primary">Click Me</button>
+  <h3 id="message" style="display:none;">🎉 Hello from jQuery!</h3>
+
+  <script>
+    $(document).ready(function(){
+      $("#btn").click(function(){
+        $("#message").fadeToggle(800);
+      });
+    });
+  </script>
+
+</body>
+</html>
